@@ -15,4 +15,5 @@ cv::Mat ColorHistogram::process(cv::Mat &img) {
     float range[2] = {0.0, 256.0};
     const float *ranges[3] = {range, range, range};
     cv::calcHist(&img, 1, channels, cv::Mat(), hist, 3, histSize, ranges);
+    return hist;
 }
