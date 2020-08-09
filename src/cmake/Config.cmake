@@ -1,0 +1,1 @@
+set(OpenCV_ex_LIBS libopendv)
