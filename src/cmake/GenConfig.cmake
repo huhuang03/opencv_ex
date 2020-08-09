@@ -1,0 +1,1 @@
+install(FILES ${CMAKE_SOURCE_DIR}/src/cmake/OpenCV_exConfig.cmake DESTINATION .)

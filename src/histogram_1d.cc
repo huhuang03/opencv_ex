@@ -1,4 +1,4 @@
-#include "histogram_1d.hpp"
+#include "opencv2_ex/histogram_1d.hpp"
 #include <opencv2/imgproc.hpp>
 #include <opencv2/highgui.hpp>
 

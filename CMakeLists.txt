@@ -9,5 +9,17 @@ set(OpenCV_DIR "D:\\Program Files\\opencv\\build")
 find_package(OpenCV REQUIRED)
 include_directories(${OpenCV_INCLUDE_DIRS})
 
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
+
+include(src/cmake/GenConfig.cmake)
+
+
 add_subdirectory("include")
 add_subdirectory("src")
+
+# samples
+option(BUILD_SAMPLES "option that build the sample or not" TRUE)
+
+if(BUILD_SAMPLES)
+    add_subdirectory(samples)
+endif()
