@@ -28,6 +28,8 @@ class ColorHistogram {
     void setSize(int size);
     
     cv::Mat process(cv::Mat &img);
+
+    void show();
 };
 
 
